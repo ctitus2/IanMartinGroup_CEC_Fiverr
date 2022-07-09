@@ -1,0 +1,39 @@
+<template>
+    <div class="lwcPortalSteps">
+
+        <article class="slds-card">
+          <div class="slds-card__body slds-p-around_large">            
+  
+              <div class="wizard">
+  
+                <div if:true={target1} class="detail slds-p-horizontal_large" data-target-id="1">
+                    <div class="slds-text-heading_large">1. Start documents</div>
+                    <p class="slds-text-heading_small">Welcome to your "Job Title" assigmentwith Raise!</p>
+                    <p class="slds-text-heading_small">Before we can clear you to start "Job Account Name" you will need to review and complete the following <strong>three sets of information:</strong></p>
+                </div>
+                <div if:true={target2} class="detail slds-p-horizontal_large" data-target-id="2">
+                    <div class="slds-text-heading_large">2. Onboarding documents</div>
+                    <p class="slds-text-heading_small">It’ll blow your mind.</p>
+                    <p class="slds-text-heading_small">Playing ping pong all night long, everything's all neon and hazy. Yeah, she's so in demand. </p>
+                </div>
+                <div if:true={target3} class="detail slds-p-horizontal_large" data-target-id="3">
+                    <div class="slds-text-heading_large">3. Upload files</div>
+                    <p class="slds-text-heading_small">Oh yeah, it’s that good.</p>
+                    <p class="slds-text-heading_small">Will you do the same for me? It's time to face the music I'm no longer your muse.</p>
+                </div>
+  
+                <div class="steps slds-m-top_x-large">
+                  <ol>
+                    <li class="current" onclick={stepHandler} data-id="1">Complete your profile</li>
+                    <li class="" onclick={stepHandler} data-id="2">Sign onboarding documents</li>
+                    <li class="" onclick={stepHandler} data-id="3">Upload credential files</li>
+                  </ol>
+                </div>
+  
+              </div>
+  
+          </div>
+        </article>
+  
+    </div>
+</template>
